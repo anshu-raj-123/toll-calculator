@@ -1,0 +1,22 @@
+.leaflet-container {
+    height: 100%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.map-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.toll-details {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.toll-details h3 {
+    margin-bottom: 10px;
+}

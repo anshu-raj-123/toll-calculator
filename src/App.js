@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Education from './components/Education';
+import Map from './components/Map';
+
 
 function App() {
+  const routeCoordinates = [
+    [37.7749, -122.4194], // San Francisco, CA
+    [34.0522, -118.2437], // Los Angeles, CA
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Education/>
+      <Map routeCoordinates={routeCoordinates} />
+    </>
   );
 }
 
